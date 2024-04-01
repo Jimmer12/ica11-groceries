@@ -7,6 +7,14 @@ p {
 pre, code {
   font-size: 0.8rem;
 }
+.code-block {
+  position: relative;
+  background-color: #cccccc50;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 0 1rem 1rem;
+  overflow-x: scroll;
+}
 .function {
   color: #6A9955;
 }
@@ -35,6 +43,9 @@ pre, code {
   position: sticky;
   top: 0;
   height: 350vh;
+}
+.index-content-section {
+  overflow: hidden;
 }
 
 .completed-step {
