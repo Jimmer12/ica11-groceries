@@ -1,0 +1,43 @@
+body {
+  color: #222;
+}
+p {
+  font-size: 1rem;
+}
+pre, code {
+  font-size: 0.8rem;
+}
+.function {
+  color: #6A9955;
+}
+.string {
+  color: #a31515;
+}
+.variable {
+  color: #0854a6;
+}
+.keyword {
+  color: #795f5f;
+}
+.comment {
+  color: #5d5d5d;
+}
+.number {
+  color: #c586c0;
+}
+.boolean {
+  color: #4ec9b0;
+}
+.operator {
+  color: #ff3030;
+}
+#intro-steps {
+  position: sticky;
+  top: 0;
+  height: 350vh;
+}
+
+.completed-step {
+  background-color: #6A9955;
+  color: #fff;
+}

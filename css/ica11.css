@@ -1,0 +1,67 @@
+:root {
+  --sixty: #f4f6f8;
+  --sixty-rgb: 244, 246, 248;
+  --thirty: #0f52a2;
+  --thirty-rgb: 15, 82, 162;
+  --ten: #2874c1;
+  --ten-rgb: 40, 116, 193;
+}
+.color-60 {
+  color: var(--sixty) !important;
+}
+.color-30 {
+  color: var(--thirty) !important;
+}
+.color-10 {
+  color: var(--ten) !important;
+}
+
+nav {
+  background-color: var(--thirty) !important;
+  color: var(--sixty) !important;
+}
+
+main {
+  height: 95vh;
+  padding: 2rem 10% 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body {
+  background-color: var(--sixty);
+  color: var(--thirty);
+}
+
+section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 2%;
+}
+
+#item-add-container {
+  width: 100%;
+}
+
+#list-container {
+  width: 80%;
+}
+
+section button {
+  width: 50%;
+  margin: 1rem 0;
+}
+
+.btn-30 {
+  background-color: var(--thirty) !important;
+  color: var(--sixty) !important;
+  transition: all 0.4s;
+}
+
+.btn-30:hover {
+  background-color: var(--ten) !important;
+}

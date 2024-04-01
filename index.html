@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery List Organizer</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./css/ica11.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand color-60" href="#">ICA 11 Groceries</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link color-60 active" aria-current="page" href="#">Index</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-60" href="./ica11.html">ICA 11</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="introduction" class="container">
+      <div class="row">
+        <div id="lecture-content" class="col">
+          <!-- JavaScript Introduction -->
+          <header>
+            <h1 >JavaScript Introduction</h1>
+          </header>
+          <p>JavaScript is a programming language that is used to make web pages interactive.
+            It is a high-level, interpreted programming language that conforms to the ECMAScript specification.
+            JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+          <p>Basically, JavaScript is a coding language that allows you to add interactive elements to your website</p>
+          <p>The greatest use of JavaScript is to add interactivity to your website. JavaScript predominantly interacts with the HTML
+          elements on the page, allowing you to manipulate them in various ways. When HTML is sent to a browser, it creates a
+          visual object, called the Document Object Model (DOM). JavaScript can manipulate the DOM, allowing you to change the
+          appearance and content of the page.</p>
+          
+          <!-- THE DOM -->
+          <article>
+            <h3>The DOM</h3>
+            <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the html page that's
+            rendered by browsers so that programs can change the document structure, style, and content. The DOM represents the
+            document as nodes and objects. That way, programming languages can connect to the page.
+            </p>
+            <p>You can check out the DOM by right clicking on the browser window and selecting "Inspect". Try it now!</p>
+            <p>Within the inspection window, you can see the HTML structure of the page under the "Elements" tab. This is the DOM. Search through the elements to see how the HTML is structured.</p>
+            <p>After a little while, navigate to the "Console" tab. This is where you can write JavaScript code to interact with the DOM. Let's write your first bits of JavaScript!</p>
+            <p>You can print something to the console by typing </p>
+            <pre><code class="keyword">console</code>.<code class="function">log</code>(<code class="string">"My first JavaScript print statement!"</code>);</pre> 
+            <p>and pressing enter. This is a great way to test your JavaScript code. Now let's print an alert to the page with:</p>
+            <pre><code class="function">alert</code>(<code class="string">"I'm alerting you with this notification"</code>);</pre>
+          </article><br>
+
+          <!-- Implementing JavaScript in our HTML Files -->
+          <article>
+            <h3>Implementing JavaScript in our HTML Files</h3>
+            <p>You can write JavaScript directly in the browser console to edit things on the fly. However, it is best practice to write your JavaScript either within your HTML or in a separate file and link it to your HTML file. By writing your JavaScript in separate files, you can reuse your JavaScript code across multiple pages.</p>
+            <p>JavaScript can be written in the <code>&lt;head&gt;</code> or <code>&lt;body&gt;</code> section of the HTML file using the <code>&lt;script&gt;</code> tags. This is useful when you want to separate your JavaScript from your HTML.</p>
+            <pre>
+              <code>&lt;script&gt;</code>
+              <code class="function">alert</code>(<code class="string">"Hello, world!"</code>);
+              <code>&lt;/script&gt;</code>
+            </pre>
+            <p>External JavaScript is written in a separate file and linked to the HTML file using the <code>&lt;script&gt;</code> tag. This is useful when you want to reuse your JavaScript code across multiple pages.</p>
+            <pre>
+              <code>&lt;script</code> <code class="keyword">src</code>=<code class="string">"script.js"</code><code>&gt;&lt;/script&gt;</code>
+            </pre>
+
+          </article>
+
+          <!-- JavaScript Variables -->
+          <article>
+            <h3>JavaScript Variables</h3>
+            <p>Variables are containers for storing data values. In JavaScript, you declare a variable with the var, let, or const
+              keyword.</p>
+            <p>Variables are used to store data values. In the example below, x, y, and z are variables:</p>
+            <pre>
+              <code class="keyword">var</code> <code class="variable">x</code> = 5;
+              <code class="keyword">let</code> <code class="variable">y</code> = 6;
+              <code class="keyword">const</code <code class="variable">z</code> = <code class="variable">x</code> + <code class="variable">y</code>;
+            </pre>
+            <p>Variables can be named anything you like, but they must follow a few rules:</p>
+            <ul>
+              <li>The name must begin with a letter (a-z, A-Z) or an underscore (_).</li>
+              <li>The name can contain letters, numbers, or the underscore character.</li>
+              <li>The name cannot contain spaces.</li>
+            </ul>
+          </article><br>
+
+          <!-- Declaring Variables -->
+          <article>
+            <h3>Declaring Variables</h3>
+            <p>The let keyword is used to declare a variable that can be reassigned, while the const keyword is used to declare a
+            variable that cannot be reassigned.</p>
+            <p>The value in the name variable can be changed.</p>
+            <pre>
+              <code class="keyword">let</code> <code class="variable">name</code> = "John";
+            </pre>
+            <p>The value in the pi variable cannot be changed</p>
+            <pre>
+              <code class="keyword">const</code> <code class="variable">pi</code> = 3.14;
+            </pre>
+          </article>
+
+          <!-- Data Types -->
+          <article>
+            <h3>Data Types</h3>
+            <p>JavaScript has many data types, including strings, numbers, booleans, arrays, and objects. These will be the most common
+            data types you will encounter when working with JavaScript.</p>
+            <ul>
+              <li><span class="fw-bold">Strings</span> are used for storing text.</li>
+              <li><span class="fw-bold">Numbers</span> are used for storing numbers.</li>
+              <li><span class="fw-bold">Booleans</span> are used for storing true or false values.</li>
+              <li><span class="fw-bold">Arrays</span> are used for storing collections of data.</li>
+              <li><span class="fw-bold">Objects</span> are used for storing collections of data using key descriptors and values.</li>
+            </ul>
+            <div class="row">
+              <div class="col">
+                <p>Declaring strings:</p>
+                <div>
+                  <code class="keyword">let</code> <code class="variable">name</code> = "John";
+                </div>
+              </div>
+              <div class="col">
+                <p>Declaring numbers:</p>
+                <div>
+                  <code class="keyword">let</code> <code class="variable">age</code> = 30;<br>
+                  <code class="keyword">const</code> <code class="variable">pi</code> = 3.14;
+                </div>
+              </div>
+              <div class="col">
+                <p>Declaring booleans:</p>
+                <div>
+                  <code class="keyword">let</code> <code class="variable">isAdult</code> = true;<br>
+                  <code class="keyword">const</code> <code class="variable">buildingIsTall</code> = false;
+                </div>
+              </div>
+            </div>
+          </article><br>
+
+          <!-- Arrays -->
+          <article>
+            <h3>Arrays</h3>
+            <p>Arrays are used for storing collections of data. They are declared using square brackets `[]` and can contain any data
+            type, including strings, numbers, booleans, arrays, and objects.</p>
+            <pre>
+              <code class="keyword">let</code> <code class="variable">fruits</code> = [<code class="string">"apple"</code>, <code class="string">"banana"</code>, <code class="string">"orange"]</code>;
+            </pre>
+            <!-- Accessing Array Elements -->
+            <h5>Accessing Array Elements</h5>
+            <p>You can access array elements using the index that represents the position of the value. Array indexes start at 0, so
+            the first element in the array has an index of 0, the second element has an index of 1, and so on.</p>
+            <p>Accessing an array element:</p>
+            <pre>
+              <code class="keyword">let</code> <code class="variable">fruits</code> = [<code class="string">"apple"</code>, <code class="string">"banana"</code>, <code class="string">"orange"</code>];
+              <code class="keyword">let</code> <code class="variable">firstFruit</code> = <code class="variable">fruits</code>[<code class="string">0</code>]; <code class="comment">// apple</code>
+              <code class="keyword">let</code> <code class="variable">secondFruit</code> = <code class="variable">fruits</code>[<code class="string">1</code>]; <code class="comment">// banana</code>
+            </pre>
+            <!-- Adding and Deleting Array Elements -->
+            <h5>Adding and Deleting Array Elements</h5>
+            <p>You can add elements to an array using the <code class="variable">array</code>.<code class="function">push</code>() method, which adds an element to the end of the array. You can remove elements from an array using the <code class="variable">array</code>.<code class="function">pop</code>() method, which removes the last element from the array.</p>
+            <p>Adding an element to an array:</p>
+            <pre>
+              <code class="keyword">let</code> <code class="variable">fruits</code> = [<code class="string">"apple"</code>, <code class="string">"banana"</code>];
+              <code class="variable">fruits</code>.<code class="function">push</code>(<code class="string">"orange"</code>);
+              <code class="variable">fruits</code>.<code class="function">push</code>(<code class="string">"grape"</code>);
+              <code class="comment">// fruits = ["apple", "banana", "orange", "grape"]</code>
+              <code class="variable">fruits</code>.<code class="function">pop</code>();
+              <code class="comment">// fruits = ["apple", "banana", "orange"]</code>
+            </pre>
+          </article>
+
+          <!-- Objects -->
+          <article>
+            <h3>Objects</h3>
+            <p>Objects are used for storing collections of data using key descriptors and values. They are declared using curly
+            brackets `{}` and can contain any data type, including strings, numbers, booleans, arrays, and other objects.</p>
+            <pre>
+              <code class="keyword">let</code> <code class="variable">person</code> = {
+                <code class="variable">name</code>: <code class="string">"John"</code>,
+                <code class="variable">age</code>: 30,
+                <code class="variable">isAdult</code>: true
+              };
+            </pre>
+            <!-- Accessing Object Properties -->
+            <h5>Accessing Object Properties</h5>
+            <p>You can access object properties using dot notation or bracket notation. Dot notation is the most common way to access
+            object properties, but bracket notation is useful when the property name is stored in a variable.</p>
+            <p>Accessing an object property using dot notation, then bracket notation:</p>
+            <pre>
+              <code class="keyword">let</code> <code class="variable">person</code> = {
+                <code class="variable">name</code>: <code class="string">"John"</code>,
+                <code class="variable">age</code>: 30,
+                <code class="variable">isAdult</code>: true
+              };
+              <code class="keyword">let</code> <code class="variable">personName</code> = <code class="variable">person</code>.<code class="keyword">name</code>; // John
+              <code class="keyword">let</code> <code class="variable">personAge</code> = <code class="variable">person</code>[<code class="string">"age"</code>]; // 30
+            </pre>
+          </article>
+
+          <!-- Back to the DOM -->
+          <article>
+            <h3>Back to the DOM</h3>
+            <p>The DOM renders our HTML page in a way that JavaScript can interact with it. JavaScript can manipulate the DOM, allowing
+            you to change the appearance and content of the page. This is done by selecting elements on the page and changing their
+            properties.</p>
+            <p>We can access the document object using the <code class="keyword">document</code> keyword. The document object represents the entire HTML document,
+            and we can use it to access and manipulate the DOM.</p>
+            
+            <!-- Selecting Elements from the DOM -->
+            <h5>Selecting Elements within the DOM</h5>
+            <p>The best way to learn about manipulating the DOM is to select elements on the page and change their properties. You can
+            select elements using the <code class="keyword">document</code>.<code class="function">getElementById</code>(), <code class="keyword">document</code>.<code class="function">getElementsByClassName</code>(), and
+            <code class="keyword">document</code>.<code class="function">getElementsByTagName</code>() methods.</p>
+            
+            <p>The <code class="keyword">document</code>.<code class="function">getElementById</code>() method selects an element by its id attribute.</p>
+            <pre><code class="keyword">let</code> <code class="variable">cardListSection</code> = <code class="keyword">document</code>.<span class="function">getElementById</span>(<code class="string">"card-list-section"</code>);</pre>
+            
+            <p>The <code class="keyword">document</code>.<code class="function">getElementsByClassName</code>() method selects all elements that have that specific class name.</p>
+            <pre><code class="keyword">let</code> <code class="variable">cardBodyList</code> = <code class="keyword">document</code>.<code class="function">getElementsByClassName</code>(<code class="string">"card-body"</code>);</pre>
+            
+            <p>Same goes for the <code class="keyword">document</code>.<code class="function">getElementsByTagName</code>() method, which selects all elements with that specific tag
+            name.Same goes for the <code class="keyword">document</code>.<code class="function">getElementsByTagName</code>() method, which selects all elements with that specific tag
+            name.</p>
+            <pre><code class="keyword">let</code> <code class="variable">divTags</code> = <code class="keyword">document</code>.<code class="function">getElementsByTagName</code>(<code class="string">"div"</code>);</pre>
+          </article>
+
+          <!-- Changing Elements and their Properties in the DOM -->
+          <article>
+            <h3>Changing Element Properties</h3>
+            <p>Because the DOM represents the HTML page as a tree of elements, you can select elements on the page and change their
+            properties (properties are the attributes of the elements). You can change an elements properties using the
+            `element.property` syntax.</p>
+            <p>For example, you can change the innerHTML property of an element to change the text inside it.</p>
+            <pre>
+              <code class="keyword">let</code> <code class="variable">cardTitle</code> = <code class="keyword">document</code>.<code class="function">getElementById</code>(<code class="string">"card-title"</code>);
+              <code class="variable">cardTitle</code>.<code class="keyword">innerHTML</code> = <code class="string">"New Card Title"</code>;
+            </pre>
+            
+            <!-- More Element Property Changes -->
+            <h5>More Element Property Changes</h5>
+            <p>Some of the many properties you can change on an element include:</p>
+            <ul>
+              <li><span class="fw-bold">innerHTML</span>: The text inside the element.</li>
+              <li><span class="fw-bold">style</span>: The style of the element.</li>
+              <li><span class="fw-bold">className</span>: The class name of the element.</li>
+              <li><span class="fw-bold">src</span>: The source of an image element.</li>
+              <li><span class="fw-bold">href</span>: The URL of an anchor element.</li>
+            </ul>
+
+            <!-- Adding and Removing Elements in the DOM -->
+            <h5>Adding and Removing Elements in the DOM</h5>
+            <p>You can add and remove elements from the DOM using the <code class="keyword">document</code>.<code class="function">createElement</code>(),
+            <code class="variable">element</code>.<code class="function">appendChild</code>(), and <code class="variable">element</code>.<code class="function">removeChild</code>() methods.</p>
+            <p>For example, you can create a new element, set its properties, and append it to the page.</p>
+            <pre>
+              <code class="keyword">let</code> <code class="variable">card</code> = <code class="keyword">document</code>.<code class="function">getElementById</code>(<code class="string">"card"</code>);
+              <code class="keyword">let</code> <code class="variable">cardHeader</code> = <code class="keyword">document</code>.<code class="function">createElement</code>(<code class="string">"div"</code>);
+              <code class="variable">cardHeader</code>.<code class="variable">innerHTML</code> = <code class="string">"New Card"</code>;
+              <code class="variable">card</code>.<code class="function">appendChild</code>(<code class="variable">cardHeader</code>);
+            </pre>
+
+            <!-- Styling Elements by adding Classes -->
+            <h5>Styling Elements by adding Classes</h5>
+            <p>You can change the style of an element by adding a class to it. You can add a class to an element using the
+            <code class="variable">element</code>.<code class="keyword">className</code> property. You can also add a class to an element using the <code class="variable">element</code>.<code class="keyword">classList</code>.<code class="function">add</code>() method.</p>
+            <pre>
+              <code class="keyword">let</code> <code class="variable">cardBody</code> = <code class="keyword">document</code>.<span class="function">getElementById</span>(<code class="string">"card-body"</code>);
+              <code class="comment">// adds one class</code>
+              <code class="variable">cardBody</code>.<code class="keyword">className</code> = <code class="string">"card-body"</code>;
+              <code class="comment">// replaces one class with multiple classes</code>
+              <code class="variable">cardBody</code>.<code class="keyword">className</code> = <code class="string">"bg-primary text-white rounded"</code>;
+              <code class="comment">// adds one class</code>
+              <code class="variable">cardBody</code>.<code class="keyword">classList</code>.<code class="function">add</code>(<code class="string">"border-bottom"</code>);
+            </pre>
+          </article>
+
+          <!-- Conditional Statements -->
+          <article>
+            <h3>Conditional Statements</h3>
+            <p>Conditional statements are used to perform different actions based on different conditions. JavaScript has several
+            conditional statements, including if, else, and else if.</p>
+            <p>The if statement executes a block of code if a specified condition is true.</p>
+            <pre>
+              <code class="keyword">const</code> <code class="variable">userAge</code> = <code class="keyword">document</code>.<span class="function">getElementById</span>(<code class="string">"user-age"</code>).value;
+              
+              <code class="keyword">if</code> (<code class="variable">userAge</code> >= 18) {
+                <code class="function">alert</code>(<code class="string">"You are an adult"</code>);
+              }
+            </pre>
+            <p>The else statement executes a block of code if the same condition is false.</p>
+            <pre>
+              <code class="keyword">if</code> (<code class="variable">userAge</code> >= 18) {
+                <code class="function">alert</code>(<code class="string">"You are an adult"</code>);
+              } <code class="keyword">else</code> {
+                <code class="function">alert</code>(<code class="string">"You are a minor"</code>);
+              }
+            </pre>
+            <p>The else if statement executes a block of code if the first condition is false and the second condition is true.</p>
+            <pre>
+              <code class="keyword">if</code> (<code class="variable">userAge</code> >= 18) {
+                <code class="function">alert</code>(<code class="string">"You are an adult"</code>);
+              } <code class="keyword">else if</code> (<code class="variable">userAge</code> >= 13) {
+                <code class="function">alert</code>(<code class="string">"You are a teenager"</code>);
+              } <code class="keyword">else</code> {
+                <code class="function">alert</code>(<code class="string">"You are a child"</code>);
+              }
+            </pre>
+          </article>
+
+          <!-- Functions -->
+          <article>
+            <h3>Functions</h3>
+            <p>Functions are blocks of code that are designed to do one job. Functions are executed when they are called. You can pass
+            data, known as parameters, into a function. Functions can return data as a result.</p>
+            <p>Functions are declared using the <code class="keyword">function</code> keyword, followed by the function name and parentheses. The code block is
+            enclosed in curly brackets.</p>
+            <pre>
+              <code class="keyword">function</code> <code class="function">greetUser</code>() {
+                <code class="function">alert</code>(<code class="string">"Hello, user!"</code>);
+              }
+            </pre>
+            <p>Anytime you want to call the function, you simply write the function name followed by parentheses and a semi-colon.</p>
+            <pre>
+              <code class="function">greetUser</code>();
+            </pre>
+            <p>Functions can take parameters, which are values that are passed into the function when it is called. The parameters are
+            listed in the parentheses of the function declaration.</p>
+            <pre>
+              <code class="keyword">function</code> <code class="function">greetUser</code>(<code class="variable">name</code>) {
+                <code class="function">alert</code>(<code class="string">"Hello, "</code> + <code class="variable">name</code> + <code class="string">"!"</code>);
+              }
+            </pre>
+            <p>When you call the function, you pass in the value for the parameter.</p>
+            <pre>
+              <code class="function">greetUser</code>(<code class="string">"John"</code>);
+            </pre>
+            <p>Functions can return data as a result. You can use the <code class="keyword">return</code> keyword to return a value from a function.</p>
+            <pre>
+              <code class="keyword">function</code> <code class="function">addNumbers</code>(<code class="variable">num1</code>, <code class="variable">num2</code>) {
+                <code class="keyword">return</code> <code class="variable">num1</code> + <code class="variable">num2</code>;
+              }
+              <code class="keyword">let</code> <code class="variable">sum</code> = <code class="function">addNumbers</code>(<code class="number">5</code>, <code class="number">10</code>);
+            </pre>
+          </article>
+
+          <!-- Loops -->
+          <article>
+            <h3>Loops</h3>
+            <p>Loops are used to execute the same block of code multiple times. JavaScript has several types of loops, including for, for in, for of, while, and do while.</p>
+            <p>For the rest of the class we will just focus on for of loops. The for of loop is used to iterate over the values of an iterable object, such as an array or a string. The loop will execute a block of code for each value in the iterable object.</p>
+            <p>Say we are given an array of fruits:</p>
+            <pre> <code class="keyword">let</code> <code class="variable">fruits</code> = [<code class="string">"apple"</code>, <code class="string">"banana"</code>, <code class="string">"orange"</code>]; </pre>
+            <p>We can loop through the array and print each fruit to the console using the for of loop</p>
+            <pre>
+              <code class="function">for</code> (<code class="keyword">let</code> <code class="variable">fruit</code> of <code class="variable">fruits</code>) {
+                <code class="keyword">console</code>.<code class="function">log</code>(fruit);
+              }
+            </pre>
+            <p>We can grab a list of elements from the DOM and loop through them to change their properties. For example, we can change
+            the background color of each element in a list:</p>
+            <pre>
+              <code class="keyword">let</code> <code class="variable">cardBodyList</code> = <code class="keyword">document</code>.<code class="function">getElementsByClassName</code>(<code class="string">"card-body"</code>);
+              <code class="function">for</code> (<code class="keyword">let</code> <code class="variable">cardBody</code> of <code class="variable">cardBodyList</code>) {
+                <code class="variable">cardBody</code>.<code class="keyword">style</code>.<code class="function">backgroundColor</code> = <code class="string">"lightblue"</code>;
+              }
+            </pre>
+            <p>You can iterate through the keys and values of an Object using the <code class="keyword">Object</code>.<code class="function">keys</code>() method and the for of loop. For example, we can loop through the keys and values of a person object:</p>
+            <pre>
+              <code class="keyword">let</code> <code class="variable">person</code> = {
+                <code class="variable">name</code>: <code class="string">"John"</code>,
+                <code class="variable">age</code>: 30,
+                <code class="variable">isAdult</code>: <code class="keyword">true</code>
+              };
+              <code class="function">for</code> (<code class="keyword">let</code> <code class="variable">key</code> of <code class="function">Object</code>.<code class="function">keys</code>(<code class="variable">person</code>)) {
+                <code class="keyword">console</code>.<code class="function">log</code>(key + <code class="string">": "</code> + <code class="variable">person</code>[key]);
+              }
+            </pre>
+
+          </article>
+
+        </div>
+
+        <div id="intro-steps" class="col">
+          <h1 id="intro-steps-header">Steps to Learn JavaScript</h1>
+          <!-- Step One -->
+          <article>
+            <h4 class="JS-steps" id="step-One">Step One</h4>
+            Open the Browser Console, which is a tool that allows you to write, manage, and monitor JavaScript on a webpage.<br>
+            Try writing a print statement to the console and make an alert appear on screen.<br>
+            Press enter to see either output.<br><br>
+          </article>
+          <!-- Step Two -->
+          <article>
+            <h4 class="JS-steps" id="step-Two">Step Two</h4>
+            Explore around the DOM. Print out the HTML structure of the page and see how it is structured with <code>document</code>.<code>getElementById</code> and <code>document</code>.<code>getElementsByClassName</code>.<br>
+            Try changing the innerHTML of the <code>h1</code> Tag at the top of this list of Steps.<br>
+            Select the element with the <code>id</code> of <code class="string">"intro-steps-header"</code> and change the <code class="keyword">innerHTML</code> to <code class="string">"JavaScript Intro Steps"</code>.<br>
+            <pre>
+              <code class="keyword">let</code> <code class="variable">introStepsHeader</code> = <code class="keyword">document</code>.<code class="function">getElementById</code>(<code class="string">"intro-steps-header"</code>);
+              <code class="variable">introStepsHeader</code>.<code class="keyword">innerHTML</code> = <code class="string">"JavaScript Intro Steps"</code>;
+            </pre>
+          </article>
+          <!-- Step Three -->
+          <article>
+            <h4 class="JS-steps" id="step-Three">Step Three</h4>
+            Find the <code>intro.js</code> file that's in the <code>js</code> folder of this project. Link the JavaScript file to the HTML file by adding a <code>script</code> tag at the bottom of the <code>body</code> section of the HTML file.<br>
+            Within the file, write some JavaScript code that will assign five variables, using different data types; you can stick with strings, numbers, and booleans for now. Print the variables to the console.<br>
+            <pre>
+              <code class="comment">// Declare variables</code>
+              <code class="keyword">var</code> <code class="variable">name</code> = <code class="string">YOUR-NAME</code>;
+              <code class="keyword">let</code> <code class="variable">age</code> = <code class="number">YOUR-AGE</code>;
+              <code class="comment">// and so on... </code>
+            </pre>
+            Now that you have some variables declared, try changing the values of the variables. For example, if you made a variable <code>name</code> and assigned it the value <code class="string">"John"</code>, change the value of the <code>name</code> variable to <code class="string">"Jane"</code>.<br>
+            Print the variables to the console to see the changes.<br><br>
+          </article>
+          <!-- Step Four -->
+          <article>
+            <h4 class="JS-steps" id="step-Four">Step Four</h4>
+            Create an array of your favorite foods. Print the array to the console.<br>
+            Access the second element in the array and print it to the console.<br>
+            Change the value of the third element in the array to a different food and print the array to the console.<br><br>
+
+            Create an object that represents a car. The object should have make, model, year, and color key/value pairs. Print the object to the console.<br>
+            Access the value of the year key and print it to the console.<br>
+            Change the value of the color key to a different color and print the object to the console.<br><br>
+          </article>
+          <!-- Step Five -->
+          <article>
+            <h4 class="JS-steps" id="step-Five">Step Five</h4>
+            Now that you have some variables, arrays, and objects declared, try writing some conditional statements. For example, write an if statement that checks if a variable is greater than or equal to a certain value. If it is, print a message to the console.<br><br>
+            <pre>
+              <code class="keyword">if</code> (<code class="variable">num</code> <code class="operator">>=</code> <code class="number">SOME-NUMBER</code>) {
+                <code class="comment">// console.log() statment goes here</code>
+              }
+            </pre>
+            Write an if, else if, else statement that checks if a variable is equivalent to two different strings. If it's equal to the first string, print a message to the console. If it's equal to the second string, print a different message to the console. If it's not equal to either string, print a third message to the console.<br><br>
+            <pre>
+              <code class="keyword">if</code> (<code class="variable">string</code> <code class="operator">===</code> <code class="string">"first-string"</code>) {
+                <code class="comment">// first console.log() statment goes here</code>
+              } <code class="keyword">else if</code> (<code class="comment">// second logic for comparison goes here</code>) {
+                <code class="comment">// second console.log() statment goes here</code>
+              } <code class="keyword">else</code> {
+                <code class="comment">// third console.log() statment goes here</code>
+              }
+            </pre>
+            With string comparisons in JavaScript, we can use the <code>===</code> operator to check if two strings are equal. This is a strict comparison, meaning that the values must be equal and the data types must be the same. If you use the <code>==</code> operator, JavaScript will try to convert the values to the same data type before comparing them, which can lead to unexpected results.<br><br>
+          </article>
+          <!-- Step Six -->
+          <article>
+            <h4 class="JS-steps" id="step-Six">Step Six</h4>
+            Now that you have some conditional statements written, try writing some functions. For example, write a function that takes two parameters, a number and a string, and prints a message to the console that includes both the number and the string.<br><br>
+            <pre>
+              <code class="keyword">function</code> <code class="function">printMessage</code>(<code class="variable">num</code>, <code class="variable">str</code>) {
+                <code class="comment">// console.log() statment goes here</code>
+              }
+              <code class="function">printMessage</code>(<code class="number">SOME-NUMBER</code>, <code class="string">"SOME STRING"</code>);
+            </pre>
+            Now try calling the same function, but use variables as the arguments. For example, if you have a variable <code>num</code> that is equal to <code class="number">5</code> and a variable <code>str</code> that is equal to <code class="string">"Hello, world!"</code>, call the function with the variables as arguments.<br><br>
+            <pre>
+              <code class="function">printMessage</code>(<code class="variable">num</code>, <code class="variable">str</code>);
+            </pre>
+          </article>
+          <!-- Step Seven -->
+          <article>
+            <h4 class="JS-steps" id="step-Seven">Step Seven</h4>
+            Try writing a for of loop. For example, write a for of loop that iterates over an array of numbers and prints each number to the console.<br><br>
+          </article>
+          <!-- Step Eight -->
+          <article>
+            <h4 class="JS-steps" id="step-Eight">Step Eight</h4>
+            Okay, big step. Combine all three concepts: conditional statements, functions, and loops. Write a function that takes an array of numbers as a parameter. The function should loop through the array and print a message to the console if the number is greater than or equal to a certain value.<br><br>
+          </article>
+          <!-- Step Nine -->
+          <article>
+            <h4 class="JS-steps" id="step-Nine">Step Nine</h4>
+            Now let's put it all together, by selecting things from within the DOM and changing their properties. Each of the text elements in this list of steps has the class <code class="string">"JS-steps"</code>. Write a for of loop that selects each element with the class <code class="string">"JS-steps"</code>. Let's change the text (<code class="keyword">innerHTML</code>) of each element that've already been completed to <code class="string">"Step Completed"</code>. We should also style these steps by adding the class <code class="string">"completed-step"</code> to each <code>h4</code> tag.<br><br>
+          </article>
+          <!-- Step Ten -->
+          <article>
+            <h4 class="JS-steps" id="step-Ten">Step Ten</h4>
+            You've made it to the final step! Now that you've completed all the steps, let's add a button to the page that will reset all the steps. When the button is clicked, all the steps should be reset to their original state. The text should be changed back to the original text and the class should be removed.<br>
+            The code is already written for you at the bottom of this HTML file, but try to do this without looking at it first.<br>
+            The button should be added to the <code>div</code> with the <code>id</code> of <code class="string">"step-Ten-button"</code>.<br><br>
+          </article>
+
+          <div id="step-Ten-button"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!------------------------------------->
+  <!-- YOUR LINK TO intro.js GOES HERE -->
+  <!------------------------------------->
+
+
+<script>
+  // STEP 10
+
+    // let resetButton = document.createElement("button");
+    // resetButton.innerHTML = "Reset Steps";
+
+    // resetButton.addEventListener("click", function() {
+    // const originalSteps = ["Step One", "Step Two", "Step Three", "Step Four", "Step Five", "Step Six", "Step Seven", "Step Eight", "Step Nine", "Step Ten"];
+
+    // let steps = document.querySelectorAll(".JS-steps");
+
+    // let arrayIndex = 0;
+    // for (let step of steps) {
+    // step.innerHTML = originalSteps[i];
+
+    // step.classList.remove("completed-step");
+
+    // arrayIndex++;
+    // }
+    // });
+    // document.getElementById("step-Ten-button").appendChild(resetButton);
+</script>
+</body>
+</html>
