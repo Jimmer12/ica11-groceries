@@ -1,6 +1,8 @@
 # Introduction
 Welcome to In-Class Activity number 11! This is an activity to introduce you to the basics of JavaScript.
 
+You will be working on a series of exercises that will help you practice the JavaScript concepts covered in the tutorial. The results of your exercises will be HTML elements that will be displayed and interacted with on the ica11.html page.
+
 ## Prerequisites
 `index.html` is a simple HTML file that includes instructions to go over all the JavaScript concepts that you need to know for this activity. Completion of `index.html` will not be graded, but will greatly aid you in completing the activity.
 
