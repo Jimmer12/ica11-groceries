@@ -9,7 +9,15 @@ For the activity, you will be working on `ica11.js`. This file contains a series
 ## Activity
 In this activity, you will be creating a tool that will track the foods that a user needs to buy at the grocery store. The user will be able to add a food to the list by typing it into an input box and clicking a button. The food will then be added to the list. The user will also be able to remove a food from the list by clicking on the food item.
 
-By the end of this activity, 
+By the end of this activity, your groceries tool will have the following features:
+- A list of foods that the user needs to buy
+- A checkbox next to each food item that the user can click to indicate that they have bought the item
+- A total number of items still left to buy
+- A button that will check all the items in the list
+- A button that will clear all the bought items in the list
+- A total price of the list
+- Styling for the items in the list based on their total price
+- A message that will display if the total price of the list exceeds a weekly budget
 
 ## Instructions
 1. Create an input box that will take in a string from the user. This will represent the food that the user wants to add to the list. Create a button that will add the food to the list when clicked.
